@@ -1,0 +1,19 @@
+form {
+    color: $color__smoky-black;
+
+    input,
+    label,
+    .active,
+    .tasks-input {
+        color: $color__smoky-black;
+    }
+}
+
+.form-header {
+    font-size: 1.2em;
+}
+
+#tasks {
+    background-color: darken($color__blue-green, 10%);
+    @include module-container-styles;
+}

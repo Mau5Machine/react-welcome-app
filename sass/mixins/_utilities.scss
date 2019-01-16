@@ -1,0 +1,19 @@
+/* Transitions ----------------------------- */
+@mixin link-transition($time: 1s) {
+    transition: color $time ease-in;
+    -webkit-transition: color $time ease-in;
+}
+
+/* Shadows --------------------------------- */
+@mixin box-shadow() {
+    box-shadow: 2px 2px 5px $color__smoky-black;
+}
+
+/* Module Styles ----------------------------- */
+@mixin module-container-styles() {
+    padding: 1.2em;
+    height: 100%;
+    border-radius: 20px;
+    @include box-shadow;
+    @content;
+}

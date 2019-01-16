@@ -1,0 +1,12 @@
+.btn {
+    background-color: $color__cerulean-blue;
+    border-radius: 5px;
+    font-family: $font__raleway;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        background-color: darken($color__cerulean-blue, 20%);
+    }
+}

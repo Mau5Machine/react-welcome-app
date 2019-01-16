@@ -1,0 +1,17 @@
+.App-clock {
+    background-color: $color__french-wine;
+
+    .clock-container {
+        font-size: 3em;
+        font-weight: 700;
+        color: $color__cerulean-blue;
+        font-family: $font__josefin;
+        background-color: $color__smoky-black;
+        @include module-container-styles;
+        border: 4px solid $color__blue-green;
+        letter-spacing: .17em;
+
+
+        @include box-shadow;
+    }
+}

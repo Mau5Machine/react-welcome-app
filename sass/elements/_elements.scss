@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $color__off-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font__josefin;
+    clear: both;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $font__raleway;
+}
+
+a {
+    font-family: $font__raleway;
+    color: $color__french-wine;
+    @include link-transition($time: 200ms);
+
+    &:hover,
+    &:active {
+        font-weight: 600;
+        color: lighten($color__french-wine, 20%);
+        text-decoration: none;
+        outline: 0;
+    }
+}

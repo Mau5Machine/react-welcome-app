@@ -1,0 +1,4 @@
+# ignore these files/folders
+node_modules/
+gulpfile.js
+yarn.lock
