@@ -1,8 +1,9 @@
 import React from 'react';
-import AddTask from './AddTask';
+// import AddTask from './AddTask';
 import Clock from './Clock';
-import TaskList from './TaskList';
+// import TaskList from './TaskList';
 import Header from './Header';
+import Reminder from './Reminder';
 import Footer from './Footer';
 
 
@@ -14,7 +15,9 @@ export default class Welcome extends React.Component {
         this.deleteTask = this.deleteTask.bind(this);
         this.state = {
             name: 'Christian',
-            tasks: props.tasks
+            tasks: props.tasks,
+            reminders: ['Respond to Summons', 'Complete This App', 'Setup Dev Server on Pi'],
+            message: undefined
         }
     }
 
@@ -37,16 +40,21 @@ export default class Welcome extends React.Component {
                 />
                 {/* Clock Component */}
                 <Clock />
+                {/* Important Reminder Component */}
+                <Reminder
+                    reminders={this.state.reminders}
+                    message={this.state.message}
+                />
                 {/* Add Tasks Component */}
-                <AddTask
+                {/* <AddTask
                     name={this.props.name}
                     addTask={this.addTask}
-                />
+                /> */}
                 {/* Display Task Component */}
-                <TaskList
+                {/* <TaskList
                     tasks={this.state.tasks}
                     deleteTask={this.deleteTask}
-                />
+                /> */}
                 {/* Footer Component */}
                 <Footer />
             </div>

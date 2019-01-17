@@ -29,9 +29,9 @@ export default class Clock extends React.Component {
     // Render the time as state to the screen
     render() {
         return (
-            <div className="App-clock center-align">
+            <div className="App-clock center-align row">
                 <p
-                    className="clock-container col s12">
+                    className="clock-container col s12 m6 l4 offset-l4 offset-m3">
                     {this.state.time}
                 </p>
             </div>

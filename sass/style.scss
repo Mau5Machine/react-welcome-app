@@ -32,17 +32,19 @@
 /* Mixins --------------------------------------------------- */
 @import "sass/mixins/utilities";
 @import "sass/mixins/mixins-main";
+/* Elements ------------------------------------------------- */
+@import "sass/elements/elements";
 /* Normalize ------------------------------------------------ */
 @import "sass/normalize";
 /* Layout --------------------------------------------------- */
 @import "sass/layout/layout";
-/* Elements ------------------------------------------------- */
-@import "sass/elements/elements";
+/* Site ----------------------------------------------------- */
+@import "sass/site/header";
 @import "sass/elements/buttons";
 /* Components ----------------------------------------------- */
 @import "sass/components/clock";
-/* Site ----------------------------------------------------- */
-@import "sass/site/header";
+@import "sass/components/reminder";
+
 /* Forms ----------------------------------------------------- */
 @import "sass/forms/forms";
 /* Tasks ----------------------------------------------------- */

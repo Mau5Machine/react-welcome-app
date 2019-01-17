@@ -1,6 +1,8 @@
 .welcome-header {
     h1 {
-        font-size: 3em;
+        font-size: 3.5em;
+        color: $color__off-white;
+        text-shadow: 2px 2px 5px $color__smoky-black;
         font-weight: 700;
     }
 }
